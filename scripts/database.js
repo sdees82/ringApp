@@ -11,7 +11,7 @@ $(document).ready(function(){
          var size = 0;       
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#designItemsContainer').append( "<li draggable='true' ondragstart='drag(event)' class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#designItemsContainer').append( "<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
             $('.roundedTwo').hide();
              size++;
         }
