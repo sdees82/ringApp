@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Baron Ring Guide</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/animsition.min.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+     <link rel="icon" href="../../favicon.png">
+  </head>
+
+
+  <body>
+   <div class="overlay2">
+ <div class="border">
+      <div class="overlay3">    
+
+            <div class="categories">
+                <!--<a href="" ng-click="controlPanel()">-->
+                    <h4 class="text-center"><img src="../../images/categories-icon.png">CATEGORIES</h4>
+                <!--</a>-->
+            </div>
+                <div class="control-panel"><a ng-click="controlPanel()">
+                     <div class="space">
+                <a href="../../index.html"><img src="../../images/ring-logo.png"></a>
+                <!--<p class="text-center">Baron Championship Rings</p>-->
+                <h1 class="text-center ringGuide">RING GUIDE</h1>
+            </div>
+                    <ul>
+                        <li><a class="text-center list" href="../../index.html">Dashboard</a></li>
+                        <li><a class="text-center" href="../design.html">Design Guidelines</a></li>
+                        <li><a class="active" href="../drafting.html">Drafting Guidelines</a></li>
+                        <li><a href="../stone.html">Stone Limitations</a></li>
+                        <li><a href="../production.html">Production Problems</a></li>
+                        <li><a href="../casting.html">Casting Problems</a></li>
+                        <li><a href="../rendering.html">Rendering Glass & Stones</a></li>
+                        <li><a href="../search.html">Search</a></li>
+                     </ul>    
+                 </div>
+                 <form class="form1">
+                     <label class="text-center">Search by tag</label>
+                        <input  type="text" />
+                        <input  id="searchBox" type="submit"/>
+                 </form>
+                 <div class="copyright">
+                     <hr>
+                     <p class="text-center">BARON CHAMPIONSHIP RINGS</p>
+                     <p class="text-center year"></p>
+                 </div>
+            </div>
+ </div>
+<div class="topBar">
+    <div class="overlay3">
+    </div>
+    </div>
+  <div class="main" >
+    <div class="container-fluid">
+    <h1 class="headlines">OTHER GUIDELINES</h1>
+    <hr>
+    <div id="draftingOtherItemsContainer" class="container-fluid" style="overflow:auto;height:60vh;">
+             <!--<li class = "li" >- Pinning pieces onto plated rings like obsidian or gold durilium like to damage the plating. Avoid if possible. In this case they will have to glue these parts.  Glue is bad but a necessary step sometimes.</li>
+             <li class = "li" >Looking at a through finger view on a ring, the 8 o'clock zone is where the baron stamp likes to live.  Try to avoid putting things there, a healthy distance away as well!  We can move it though if need be.</li>
+             <li class = "li" >- When in doubt, design on a size smaller for sales!</li>
+             <li class = "li" >- When building a building, refer to my model of 'perfect windows' in:\\BILNAS\Design Department\Assets\PIECES\PIECES\Buildings or Structures I have since built stuff below this limit and it has looked nice but play it safe.  I likely got lucky a casting worked well for a change.</li>
+             <li class = "li" >- If you are working with a '00' style and have stamping or stones around the outer edge.  Beware that the wall needs to be a healthy thickness that's holding the custom stone.  Stuff likes to cut into stuff that you can't physically see.</li>
+             <li class = "li" >- If something looks tiny or squished, regardless of measurements, just don’t do it.  It looks ugly and is likely close to failing.  Even if it’s possible, unsightly isn’t good to show anyways.</li>
+             <li class = "li" >- Antiquing must have a wall before you insert a stone next to it to block the antiquing.  Some ring tops like the CB12 like to have no bezel and that antiquing would run right into a bad spot there.  It's doable, but painful.  Be aware of how the ring is vs the rules.  Some of the templates are built for different applications of things.</li>
+             <li class = "li" >- For lapped off obsidian pieces.  It must be a simple silhouette that sticks out from the ring to lap off.  If it is a complex shape of a million highs and lows, they cannot lap it off accurately.  Also they can't nick the obsidian that is supposed to remain there either, so easier the better.  They'd have to send for replating if they mess this up.</li>
+             <li class = "li" >- Glass enamel doesn’t work well on Obsidian rings.  Recently I did hear that if they put down a white base enamel on Obsidian, then flood the remaining area with the desired colour, this works well.  I’m a bit cautious about it still though.</li>                                       -->
+    </div>
+     <div class="container-fluid button-container">
+        <button data-path="drafting/other" class="btn addItems">Add Guideline</button>
+        <button class="btn deleteItems">Delete Guideline</button>
+        <button class="btn cancelGuideline">Cancel</button>
+        <button class="btn deleteGuideline">Delete Guideline</button>
+    </div><!--end button container-->
+    </div>
+  </div>
+   </div>
+   <form class="form3">
+        <h3>Are you sure want to delete guideline?</h3>
+        <div class="question">
+            <button data-path="drafting/other" class="btn yes">Yes</button>
+            <button class="btn no">No</button>
+        </div>
+    </form>
+    <!--modal form-->
+    <div class="form-modal">
+        <form class="form2">
+            <div class="form-header">
+                
+                <span>Add New Guideline</span>
+            </div><!--end form header-->
+            <div class="form-content">
+                <textarea class="addItemText" value="message"></textarea>
+            </div>
+            <div class="form-footer">
+                <button class="btn cancel">Cancel</button>
+                <button class="btn submit">Submit</button>
+            </div><!--end form footer-->
+        </form>
+        </div><!--end modal form-->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/f08d62a54f.js"></script>
+ <script src="../../scripts/animsition.min.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+ <script src="../../scripts/app.js"></script>
+ <script src="../../scripts/database.js"></script>
+</body>
+
+  
+</html>

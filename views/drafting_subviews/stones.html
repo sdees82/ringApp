@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Baron Ring Guide</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/animsition.min.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+     <link rel="icon" href="../../favicon.png">
+  </head>
+
+  <body>
+      <div class="overlay2">
+    <div class="border">
+            <div class="overlay3">
+
+            <div class="categories">
+                <!--<a href="" ng-click="controlPanel()">-->
+                    <h4 class="text-center"><img src="../../images/categories-icon.png">CATEGORIES</h4>
+                <!--</a>-->
+            </div>
+                <div class="control-panel"><a ng-click="controlPanel()">
+                    <div class="space">
+                <a href="../../index.html"><img src="../../images/ring-logo.png"></a>
+                <!--<p class="text-center">Baron Championship Rings</p>-->
+                <h1 class="text-center ringGuide">RING GUIDE</h1>
+            </div>
+                    <ul>
+                        <li><a class="text-center list" href="../../index.html">Dashboard</a></li>
+                        <li><a class="text-center" href="../design.html">Design Guidelines</a></li>
+                        <li><a class="active" href="../drafting.html">Drafting Guidelines</a></li>
+                        <li><a href="../stone.html">Stone Limitations</a></li>
+                        <li><a href="../production.html">Production Problems</a></li>
+                        <li><a href="../casting.html">Casting Problems</a></li>
+                        <li><a href="../rendering.html">Rendering Glass & Stones</a></li>
+                        <li><a href="../search.html">Search</a></li>
+                     </ul>    
+                 </div>
+                 <form class="form1">
+                     <label class="text-center">Search by tag</label>
+                        <input  type="text" />
+                        <input  id="searchBox" type="submit"/>
+                 </form>
+                 <div class="copyright">
+                     <hr>
+                     <p class="text-center">BARON CHAMPIONSHIP RINGS</p>
+                     <p class="text-center year"></p>
+                 </div>
+            </div>
+    </div>
+<div class="topBar">
+    <div class="overlay3">
+    </div>
+    </div>
+  <div class="main" >
+    <div class="container-fluid">
+    <h1 class="headlines">STONES</h1>
+    <hr>
+    <div id="draftingStonesItemsContainer"class="container-fluid" style="overflow:auto;height:60vh;">
+             <!--<li class = "li" >- Pave set stones can only be pave set if they are in simple circles or arcs or straight lines.  If the stones are set all over the place, that'/s fine but you can/'t use pave.  Essentially we don’t pave anything.  We just 2 prong set the stones.  The prongs absolutely have to be on the direct opposite side of the stone from one another to work properly.</li>
+             <li class = "li" >- Custom stones placed into plated rings also likely need to be glued.  There is no easy way to set them without damaging the plating.  What do I keep saying about glue?</li>
+             <li class = "li" >- All custom stones cannot exceed 21mm x 35mm.Except blue stones, they are 20mm x 35mm.  Silly blue stones!</li>
+             <li class = "li" >- For stones in the 'cavs series record zone', please don't put under say a 2XL or XL for now.  This needs to be verified what is the solid NO size though.</li>
+             <li class = "li" >- Marquise stones would be encouraged to be set via walls and not a solid bezel all the way around.  On plated rings this is required!  Solid walls do look best though, for high end teams, use a solid wall if plating isn’t present.</li>
+             <li class = "li" >- Smooth stones are the cheapest stones to order.  Stick to this when making rings if possible.  Depending on the team we can upgrade to checkerboard but most of the teams we can get away with smooth.</li>
+             <li class = "li" >- Min stone size is 1mm for durilium.  For super crazy orders that will hurt our feelings, we can use 0.8mm but in diamonds only.  1mm is the smallest for cubics.</li>
+             <li class = "li" >- For antiquing, try to stick to one level logos for this.  It's possible to do still but if every ring has a 8 layered weird trophy shape and an antiqued background, it's very difficult to paint only the background and not accidentally hit the other 8 levels by accident.  Once it's on there, it's stained permanently.  Kind of evaluate this depending on the team though.  If it’s NBA, we’ll find a way.  If it’s high school, it isn’t worth the trouble.</li>
+             <li class = "li" >- We cannot pin a logo into a faceted stone.  It would need to have a flat bottom.  Faceted stones all come to a point, if a drill goes into that zone, it shatters the stone.  For a design we can get away with this but drafting will build a stone so that it isn’t pointed later on.</li>
+             <li class = "li" >- For the smaller ladies rings, pinned logos over the tiny stones isn’t allowed.  Any small stone this stands for but the requests come in this way often and it gets designed by accident.  Avoid please.</li>                                   -->
+    </div>
+    <div class="container-fluid button-container">
+        <button data-path="drafting/stones" class="btn addItems">Add Guideline</button>
+       <button class="btn deleteItems">Delete Guideline</button>
+        <button class="btn cancelGuideline">Cancel</button>
+        <button class="btn deleteGuideline">Delete Guideline</button>
+    </div><!--end button container-->
+    </div>
+  </div>
+      </div>
+       <form class="form3">
+        <h3>Are you sure want to delete guideline?</h3>
+        <div class="question">
+            <button data-path="drafting/stones" class="btn yes">Yes</button>
+            <button class="btn no">No</button>
+        </div>
+    </form>
+       <!--modal form-->
+    <div class="form-modal">
+        <form class="form2">
+            <div class="form-header">
+                
+                <span>Add New Guideline</span>
+            </div><!--end form header-->
+            <div class="form-content">
+                <textarea class="addItemText" value="message"></textarea>
+            </div>
+            <div class="form-footer">
+                <button class="btn cancel">Cancel</button>
+                <button class="btn submit">Submit</button>
+            </div><!--end form footer-->
+        </form>
+        </div><!--end modal form-->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/f08d62a54f.js"></script>
+ <script src="../../scripts/animsition.min.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+ <script src="../../scripts/app.js"></script>
+ <script src="../../scripts/database.js"></script>
+</body>
+</html>

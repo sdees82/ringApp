@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Baron Ring Guide</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/animsition.min.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+     <link rel="icon" href="../../favicon.png">
+  </head>
+
+
+  <body>
+      <div class="overlay2">
+ <div class="border">
+          <div class="overlay3">  
+
+            <div class="categories">
+                <!--<a href="" ng-click="controlPanel()">-->
+                    <h4 class="text-center"><img src="../../images/categories-icon.png">CATEGORIES</h4>
+                <!--</a>-->
+            </div>
+                <div class="control-panel"><a ng-click="controlPanel()">
+                    <div class="space">
+                <a href="../../index.html"><img src="../../images/ring-logo.png"></a>
+                <!--<p class="text-center">Baron Championship Rings</p>-->
+                <h1 class="text-center ringGuide">RING GUIDE</h1>
+            </div>
+                    <ul>
+                        <li><a class="text-center list" href="../../index.html">Dashboard</a></li>
+                        <li><a class="text-center" href="../design.html">Design Guidelines</a></li>
+                        <li><a href="../drafting.html">Drafting Guidelines</a></li>
+                        <li><a href="../stone.html">Stone Limitations</a></li>
+                        <li><a href="../production.html">Production Problems</a></li>
+                        <li><a class="active" href="../casting.html">Casting Problems</a></li>
+                        <li><a href="../rendering.html">Rendering Glass & Stones</a></li>
+                        <li><a href="../search.html">Search</a></li>
+                     </ul>    
+                 </div>
+                 <form class="form1">
+                     <label class="text-center">Search by tag</label>
+                        <input type="text" />
+                        <input id="searchBox" type="submit"/>
+                 </form>
+                 <div class="copyright">
+                     <hr>
+                     <p class="text-center">BARON CHAMPIONSHIP RINGS</p>
+                     <p class="text-center year"></p>
+                 </div>
+            </div>
+ </div>
+            <div class="topBar">
+                <div class="overlay3">
+
+                </div>
+    </div>
+<div class="main">
+    <div class="container-fluid">
+    <h1 class="headlines"><span>DOUBLE </span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOPS</h1>
+    <hr>
+    <div id="castingDoubletopsItemsContainer" class="container-fluid" style="overflow:auto;height:60vh;">
+        <!--<li class = "li">- No double tops below a lg. I'd push for 24's, 13's, 14's as well. Needs approval to make a rule. If stamping is illegal below a LG, this should be as well.</li>-->
+    </div>
+     <div class="container-fluid">
+            <!--<li class = "li">- Stones too close to raised logo. Setters can't push prongs. Keep prongs a healthy distance from the outer walls and logos. Follow the metal distance rule for things closing up on us. If it's far enough away where it won't fuse together, we are good! 0.2mm or so is fine. Don't measure though, just eyeball it. Drafters can worry about the technical there. The prongs do have a taper on them so that helps if we are too close though. There is no real exact science on this one.</li>
+            <li class = "li">- Crazy amounts of different stone sizes (more for drafting to fix though but is great if it’s right the first time). Lots of burr change outs required for that and it slows production down.</li>
+            <li class = "li">- Stones put at the bottom of a shoulder like where the # goes is actually difficult to set. The way the setter holds the ring is designed to pinch it at the very bottom where the ring is thinnest. It's made so they can set stones on the top easiest right? Still possible but if a trend emerges you'll hear about it.</li>-->
+    </div>
+    <div class="container-fluid button-container">
+        <button data-path="casting/doubletops" class="btn addItems">Add Guideline</button>
+         <button class="btn deleteItems">Delete Guideline</button>
+        <button class="btn cancelGuideline">Cancel</button>
+        <button class="btn deleteGuideline">Delete Guideline</button>
+    </div><!--end button container-->
+    </div>
+</div>
+      </div>
+       <form class="form3">
+        <h3>Are you sure want to delete guideline?</h3>
+        <div class="question">
+            <button data-path="stone/stones" class="btn yes">Yes</button>
+            <button class="btn no">No</button>
+        </div>
+    </form>
+   <!--modal form-->
+    <div class="form-modal">
+        <form class="form2">
+            <div class="form-header">
+                
+                <span>Add New Guideline</span>
+            </div><!--end form header-->
+            <div class="form-content">
+                <textarea class="addItemText" value="message"></textarea>
+            </div>
+            <div class="form-footer">
+                <button class="btn cancel">Cancel</button>
+                <button class="btn submit">Submit</button>
+            </div><!--end form footer-->
+        </form>
+        </div><!--end modal form-->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/f08d62a54f.js"></script>
+ <script src="../../scripts/animsition.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+ <script src="../../scripts/app.js"></script>
+ <script src="../../scripts/database.js"></script>
+  </body>
+
+  
+</html>
