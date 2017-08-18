@@ -212,13 +212,14 @@ a:focus {
     margin-left: 2px;
 }
 .form2 {
-    box-shadow: 1px 1px 4px #222;
+    /*box-shadow: 1px 1px 4px #222;*/
     background: #fff;
     max-width: 600px;
     margin-top: 50px;
     /*border: 1px solid #666;*/
     padding: 40px 40px;
 }
+
 .form3{
     visibility: hidden;
     z-index: 10;
@@ -236,6 +237,14 @@ a:focus {
 }
 .form3 h3{
     color: #fff;
+}
+.form3 img, .form2 img{
+    height:40px;
+    width: 40px;
+}
+.form2 img {
+    display: block;
+    margin: auto;
 }
 .cancelGuideline{
     display: none;

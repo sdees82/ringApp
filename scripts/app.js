@@ -1,7 +1,6 @@
 
   $(document).ready(function(){
-    var year = new Date();
-$('.year').html('<span>@' + year.getFullYear() + ' All Rights Reserved</span>');
+
 $('#designlink').mouseover(function(){
   $('.designSlide').animate({
       width:'100px'
