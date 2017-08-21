@@ -132,7 +132,8 @@ $(document).ready(function(){
             $('#draftingStonesItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
             $('.draggable').draggable({
                 containment:'parent',
-                cursor:'move'
+                cursor:'move',
+                snap:'.li'
             });
              $('.roundedTwo').hide();
              size++;
@@ -148,7 +149,8 @@ $(document).ready(function(){
             $('#draftingOtherItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
             $('.draggable').draggable({
                 containment:'parent',
-                cursor:'move'
+                cursor:'move',
+                snap:'.li'
             });
              size++;
              $('.roundedTwo').hide();
@@ -166,7 +168,8 @@ $(document).ready(function(){
             $('#stoneStonesItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
             $('.draggable').draggable({
                 containment:'parent',
-                cursor:'move'
+                cursor:'move',
+                snap:'.li'
             });
             size++;
              $('.roundedTwo').hide();
@@ -182,7 +185,8 @@ $(document).ready(function(){
             $('#stoneCustomsItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
             $('.draggable').draggable({
                 containment:'parent',
-                cursor:'move'
+                cursor:'move',
+                snap:'.li'
             });
             size++;
              $('.roundedTwo').hide();
@@ -199,7 +203,8 @@ $(document).ready(function(){
             $('#productionLogoItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
             $('.draggable').draggable({
                 containment:'parent',
-                cursor:'move'
+                cursor:'move',
+                snap:'.li'
             });
             size++;
              $('.roundedTwo').hide();
@@ -215,7 +220,8 @@ $(document).ready(function(){
             $('#productionPinItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
              $('.draggable').draggable({
                 containment:'parent',
-                cursor:'move'
+                cursor:'move',
+                snap:'.li'
             });
              size++;
              $('.roundedTwo').hide();
@@ -231,7 +237,8 @@ $(document).ready(function(){
             $('#productionStonesItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
             $('.draggable').draggable({
                 containment:'parent',
-                cursor:'move'
+                cursor:'move',
+                snap:'.li'
             });
              size++;
              $('.roundedTwo').hide();
@@ -248,7 +255,8 @@ $(document).ready(function(){
             $('#castingDoubletopsItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
             $('.draggable').draggable({
                 containment:'parent',
-                cursor:'move'
+                cursor:'move',
+                snap:'.li'
             });
             size++;
              $('.roundedTwo').hide();
@@ -264,7 +272,8 @@ $(document).ready(function(){
             $('#castingStampingItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
             $('.draggable').draggable({
                 containment:'parent',
-                cursor:'move'
+                cursor:'move',
+                snap:'.li'
             });
             size++;
              $('.roundedTwo').hide();
@@ -282,7 +291,8 @@ $(document).ready(function(){
             $('#renderingMaterialsItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
              $('.draggable').draggable({
                 containment:'parent',
-                cursor:'move'
+                cursor:'move',
+                snap:'.li'
             });
              size++;
              $('.roundedTwo').hide();
