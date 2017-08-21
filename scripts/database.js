@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+    
      $('.cancelGuideline').hide();
     $('.deleteGuideline').hide();
     
@@ -11,7 +12,11 @@ $(document).ready(function(){
          var size = 0;       
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#designItemsContainer').append( "<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#designItemsContainer').append( "<li draggable='true' class='li draggable'>"+"<input class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
             $('.roundedTwo').hide();
              size++;
         }
@@ -23,7 +28,11 @@ $(document).ready(function(){
          var size = 0;      
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#logoItemsContainer').append( "<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#logoItemsContainer').append( "<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+             $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
              $('.roundedTwo').hide();
              size++;
         }
@@ -35,7 +44,11 @@ $(document).ready(function(){
          var size = 0;        
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#sveContainer').append( "<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#sveContainer').append( "<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+           $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
             $('.roundedTwo').hide();
              size++;
         }
@@ -47,7 +60,11 @@ $(document).ready(function(){
          var size = 0;        
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#metalsContainer').append("<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#metalsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
             $('.roundedTwo').hide();
              size++;
         }
@@ -61,7 +78,11 @@ $(document).ready(function(){
          var size = 0;        
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#draftingEngravingItemsContainer').append("<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#draftingEngravingItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
             $('.roundedTwo').hide();
              size++;
         }
@@ -73,7 +94,11 @@ $(document).ready(function(){
          var size = 0;        
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#draftingFontsItemsContainer').append("<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#draftingFontsItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+          $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
            $('.roundedTwo').hide();
              size++;
         }
@@ -86,7 +111,12 @@ $(document).ready(function(){
          var size = 0;
         for( var key in listItems){
              if(!listItems.hasOwnProperty(key)) continue;
-             $('#draftingLogoItemsContainer').append( "<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+             $('#draftingLogoItemsContainer').append( "<li draggable='true' class='li draggable ui-front'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move',
+                snap:'.li'
+            });
              $('.roundedTwo').hide();
              size++;
         }
@@ -99,7 +129,11 @@ $(document).ready(function(){
          var size = 0;        
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#draftingStonesItemsContainer').append("<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#draftingStonesItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
              $('.roundedTwo').hide();
              size++;
         }
@@ -111,7 +145,11 @@ $(document).ready(function(){
          var size = 0;        
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#draftingOtherItemsContainer').append("<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#draftingOtherItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
              size++;
              $('.roundedTwo').hide();
         }
@@ -125,7 +163,11 @@ $(document).ready(function(){
          var size = 0;        
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#stoneStonesItemsContainer').append("<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#stoneStonesItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
             size++;
              $('.roundedTwo').hide();
         }
@@ -137,7 +179,11 @@ $(document).ready(function(){
          var size = 0;        
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#stoneCustomsItemsContainer').append("<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#stoneCustomsItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
             size++;
              $('.roundedTwo').hide();
         }
@@ -150,7 +196,11 @@ $(document).ready(function(){
          var size = 0;        
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#productionLogoItemsContainer').append("<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#productionLogoItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
             size++;
              $('.roundedTwo').hide();
         }
@@ -162,7 +212,11 @@ $(document).ready(function(){
          var size = 0;        
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#productionPinItemsContainer').append("<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#productionPinItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+             $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
              size++;
              $('.roundedTwo').hide();
         }
@@ -174,7 +228,11 @@ $(document).ready(function(){
          var size = 0;        
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#productionStonesItemsContainer').append("<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#productionStonesItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
              size++;
              $('.roundedTwo').hide();
         }
@@ -187,7 +245,11 @@ $(document).ready(function(){
          var size = 0;        
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#castingDoubletopsItemsContainer').append("<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#castingDoubletopsItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
             size++;
              $('.roundedTwo').hide();
         }
@@ -199,7 +261,11 @@ $(document).ready(function(){
          var size = 0;        
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#castingStampingItemsContainer').append("<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#castingStampingItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
             size++;
              $('.roundedTwo').hide();
         }
@@ -213,7 +279,11 @@ $(document).ready(function(){
          var size = 0;         
         for( var key in listItems){
             if(!listItems.hasOwnProperty(key)) continue;
-            $('#renderingMaterialsItemsContainer').append("<li class='li'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+            $('#renderingMaterialsItemsContainer').append("<li draggable='true' class='li draggable'>"+"<input  class='roundedTwo' type='checkbox' data-key='" + myKeys[size] +"'/>" + "&nbsp;&nbsp;&nbsp;&nbsp;- " + listItems[key].newItem + "</li>");
+             $('.draggable').draggable({
+                containment:'parent',
+                cursor:'move'
+            });
              size++;
              $('.roundedTwo').hide();
         }

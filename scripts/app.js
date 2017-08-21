@@ -1,5 +1,6 @@
 
   $(document).ready(function(){
+    
 
 $('#designlink').mouseover(function(){
   $('.designSlide').animate({
