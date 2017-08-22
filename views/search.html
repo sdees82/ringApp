@@ -60,32 +60,16 @@
         <h1 class="headlines">Search</h1>
         <hr>
             <div id="searchResults" class="container-fluid"> 
-                <select style="width:30%;"class="form-control select-cat-1">
-                    <option selected disabled>Please Select</option>
-                     <option value="design">Design</option>
-                      <option value="drafting">Drafting</option>
-                      <option value="stone">Stone Limitations</option>
-                      <option value="production">Production Problems</option>
-                      <option value="casting">Casting Problems</option>
-                      <option value="rendering">Rendering Glass	&#38; Stones</option>
-                </select> 
-                <select style="width:30%;"class="form-control select-cat-2">
-                    <option></option>
-                     <option></option>
-                      <option></option>
-                </select> 
-                <select style="width:30%;"class="form-control select-cat-3">
-                    <option></option>
-                     <option></option>
-                      <option></option>
-                </select> 
-                <button id="searchButton" class="btn">Enter</button>
+                <form>
+                    <input type="text"  class='searchInput'>
+                    <button id="searchButton" class="btn">Enter</button>
+                </form>
         </div>
         
         <div class="container-fluid">
             <h3 id="resultsh3">RESULTS</h3>
-            <div class="searchPop" style="overflow:auto;height:60vh;">
-                <!--<p>Results goes here</p>-->
+            <div class="searchPop" style="overflow:auto;height:65vh;">
+                <h1 class="noResultsFound">No Results Found</h1>
             </div>
         </div>
     </div>
@@ -104,29 +88,7 @@
  <script src="../scripts/app.js"></script>
  <script src="../scripts/database.js"></script>
  <script src="../scripts/search.js"></script>
- <script>
-     // Initialize Firebase
-//   var config = {
-//     apiKey: "AIzaSyCptKnmu7GnmM7GFmzXC6LfdmAOyMEVhMM",
-//     authDomain: "ringapp-51edd.firebaseapp.com",
-//     databaseURL: "https://ringapp-51edd.firebaseio.com",
-//     projectId: "ringapp-51edd",
-//     storageBucket: "ringapp-51edd.appspot.com",
-//     messagingSenderId: "718307853295"
-//   };
-//   firebase.initializeApp(config);
-//      firebase.database().ref('search/').once('value').then(function(snapshot){
-//         var listItems = snapshot.val();     
-//          for( var key in listItems){
-//              if(!listItems.hasOwnProperty(key)) continue;
-//              $('#searchResults').append("<li class='li'>" + "- " + listItems.newItem + "</li>");
-//          }
-//     });
-//     var sortedData = firebase.database().ref().orderByChild('design').once('value',function(snapshot){
-//         console.log(snapshot.val);
-//     });
-         
-   
+ <script>   
      </script>
 </body>
 
