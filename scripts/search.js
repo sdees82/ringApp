@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 var wasItCalled = false;
 var $searchButton = $('#searchButton');
-var contentAdded = 0;
+
 
 
 /*****search button is clicked*********** */
@@ -18,7 +18,7 @@ function buttonClick(e){
         contentAdded = 0;   
         var searchInput = $('.searchInput').val();
         searchDatabase(searchInput.toLowerCase());
-        anyResults();
+
     }
 }
 $('#searchButton').click(buttonClick);
@@ -29,13 +29,10 @@ $("#id_of_textbox").keyup(function(event){
     }
 });
 /********************************************* */
-function anyResults(){
-    console.log(contentAdded);
-}
 
 function searchDatabase(searchInput){
     /*********DESIGN************* */
-
+    
      
      firebase.database().ref('design/logo/').child('-Kqy3oppVp9JiKD4eW1p').orderByKey().equalTo('newItem').once('value').then(function(snapshot){
          var result = snapshot.val();
@@ -44,7 +41,6 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-               contentAdded++;
                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
@@ -59,7 +55,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                 contentAdded++;
+                 
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -73,8 +69,10 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
+                contentAdded++;
+                anyResult();
              }
          }
     });
@@ -86,7 +84,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -98,7 +96,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -111,7 +109,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -124,7 +122,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -136,7 +134,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -148,7 +146,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -160,7 +158,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -172,7 +170,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -184,7 +182,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -196,7 +194,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -208,7 +206,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -220,7 +218,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -232,7 +230,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -244,7 +242,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -256,7 +254,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -268,7 +266,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -283,7 +281,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -296,7 +294,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -308,7 +306,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -320,7 +318,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -332,7 +330,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -345,7 +343,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -357,7 +355,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -369,7 +367,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -381,7 +379,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -393,7 +391,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -405,7 +403,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -417,7 +415,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -429,7 +427,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -441,7 +439,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -453,7 +451,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -466,7 +464,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -478,7 +476,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -490,7 +488,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -502,7 +500,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -514,7 +512,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -526,7 +524,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -538,7 +536,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -550,7 +548,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -562,7 +560,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -575,7 +573,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -587,7 +585,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -599,7 +597,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -611,7 +609,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -623,7 +621,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -635,7 +633,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -647,7 +645,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -659,7 +657,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -671,7 +669,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -683,7 +681,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -697,7 +695,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -710,7 +708,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -722,7 +720,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -736,7 +734,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -748,7 +746,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -761,7 +759,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -774,7 +772,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -786,7 +784,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -798,7 +796,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -811,7 +809,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -825,7 +823,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -838,7 +836,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -850,7 +848,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -862,7 +860,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -874,7 +872,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -886,7 +884,7 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
@@ -898,10 +896,24 @@ function searchDatabase(searchInput){
              var search = result[key].search(String(searchInput));
             
              if( search !== -1){
-                contentAdded++;
+                
                 $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
              }
          }
     });  
+    
+   anyResults();
 }
+
+function anyResults(){
+    setTimeout(function(){
+        if($('.searchPop .li').length <= 0){
+             $('.searchPop').append('<h1>No Results Found </h1>');
+            console.log('no results found');
+        };
+       
+    },1000);
+}
+
+
 });
