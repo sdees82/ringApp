@@ -444,18 +444,7 @@ function searchDatabase(searchInput){
              }
          }
     });
-     firebase.database().ref('drafting/logo/').child('-KqyHImuFO4yn_V2WLLL').orderByKey().equalTo('newItem').once('value').then(function(snapshot){
-         var result = snapshot.val();
-         for(key in result){
-             
-             var search = result[key].search(String(searchInput));
-            
-             if( search !== -1){
-                
-                $('.searchPop').append("<li class='li'>" +"- " + result[key] + "</li>");
-             }
-         }
-    });
+     
     /********other************ */
      firebase.database().ref('drafting/other/').child('-KqyLwjERPc1DAp_-d5F').orderByKey().equalTo('newItem').once('value').then(function(snapshot){
          var result = snapshot.val();
