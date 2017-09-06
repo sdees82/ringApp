@@ -15,7 +15,8 @@
   </head>
 
 
-  <body>
+  <body ng-app="">
+      <div></div>
  <div class="border">
           <div class="overlay3">  
             
@@ -24,17 +25,30 @@
                 <a href="index.html"><img src="images/ring-logo.png"></a>
                 <!--<p class="text-center">Baron Championship Rings</p>-->
                 <h1 class="text-center ringGuide">RING GUIDE</h1>
-                </div>
-                
+                </div> 
                     <ul>
-                        <li><a  class="text-center list active" href="index.html">Dashboard</a></li>
-                        <li><a  id="designlink" class="text-center" href="views/design.html">Design Guidelines</a></li>
-                        <li><a href="views/drafting.html">Drafting Guidelines</a></li>
-                        <li><a href="views/stone.html">Stone Limitations</a></li>
+                         <li><a  class="text-center list" href="index.html">Dashboard</a></li>
+                            <li><a id ="guidelinesContainer"class="text-center mainCats" href="views/design.html">Ring Design Guidelines</a></li>
+                                <div class="guidelinesSubContainer">
+                                    <li><a id="stones" class="text-center subcats" href="views/design.html">Stones</a></li>
+                                        <!--stones sub categories-->
+                                    <div class="stonesContainer">
+                                        <li><a  class="text-center subcats2" href="views/design.html">standard Stones</a></li>
+                                        <li><a  class="text-center subcats2 " href="views/stone_subviews/custom.html">custom Stones</a></li>
+                                        <li><a  class="text-center subcats2" href="views/design.html">stone limitations</a></li>
+                                    </div>
+                                    <li><a class="text-center subcats" href="views/design.html">logos</a></li>
+                                    <li><a class="text-center subcats" href="views/design.html">engraving</a></li>
+                                    <li><a class="text-center subcats" href="views/design.html">fonts</a></li>
+                                    <li><a class="text-center subcats" href="views/design.html">measurements</a></li>
+                            </div><!--end ringDesignGuidelines-->
+
+                        <li><a href="views/rendering.html">3D rendering</a></li>
+                        <li><a href="">file locations</a></li>
+                        <li><a href="">glossary</li>
                         <li><a href="views/production.html">Production Problems</a></li>
                         <li><a href="views/casting.html">Casting Problems</a></li>
-                        <li><a href="views/rendering.html">Rendering Glass & Stones</a></li>
-                        <li><a href="views/search.html">Search</a></li>
+                        <!--<li><a href="views/search.html">Search</a></li>-->
                      </ul>    
                  </div>
                  <form class="form1">
@@ -48,16 +62,6 @@
                      <p class="text-center year">@2017 All Rights Reserved</p>
                  </div>
           </div><!--end overlay-->
-            </div>
-
-            <div class="designSlide">
-                <ul>
-                    <a href=""><li>Stones</li></a>
-                    <a href=""><li>Logos</li></a>
-                    <a href=""><li>File Locations</li></a>
-                    <a href=""><li>Metals</li></a>
-                    <a href=""><li>Terminology</li></a>
-                </ul>
             </div>
              <div  class="topBar">
     <div class="overlay3">
@@ -78,6 +82,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
  <script src="scripts/app.js"></script>
  <script src="scripts/database.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
   </body>
 </html>
 
